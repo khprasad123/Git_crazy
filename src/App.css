@@ -1,0 +1,14 @@
+.search-form{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.App {
+	text-align: center;
+	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  

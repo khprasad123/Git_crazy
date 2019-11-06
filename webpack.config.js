@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {  
     devtool: 'inline-source-map',
-    entry: './src/index.js',  
+    entry:['babel-polyfill', './src/index.js'],
     output: {    
         path: __dirname + '/build',    
         publicPath: '/',    
@@ -16,7 +16,7 @@ module.exports = {
                 {    
                     test: /\.(js|jsx)$/,
                     exclude: /node_modules/,    
-                    use: ['babel-loader', 'eslint-loader'] 
+                    use: ['babel-loader'] 
                  },  
                  {    
                      test: /\.less$/,    
